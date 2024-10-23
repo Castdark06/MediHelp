@@ -1,0 +1,468 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%; 
+    max-height: 600px; 
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.cta-button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0055b3;
+}
+
+/* Info Section */
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+}
+
+.info-box {
+    width: 30%;
+    text-align: center;
+}
+
+.info-box h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.info-box p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.info-button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.info-button:hover {
+    background-color: #0055b3;
+}
+
+/* Medicamentos Section */
+.medicamentos {
+    padding: 50px 0;
+    text-align: center; /* Asegura que el contenido esté centrado */
+}
+
+.medicamentos h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta las columnas al tamaño del contenido */
+    grid-gap: 40px; /* Espacio entre los cuadros */
+    max-width: 1200px; /* Anchura máxima del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.medicamento {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Asegura que el contenido de cada tarjeta esté centrado */
+}
+
+.medicamento img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ajusta la imagen al cuadro sin distorsión */
+}
+
+.medicamento h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #003366;
+}
+
+.medicamento p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.medicamento p {
+    font-size: 16px;
+    color: #555;
+}
+.medicamento img {
+    width: 100%; /* Ancho máximo igual al contenedor */
+    height: 650px; /* Altura fija para todas las imágenes */
+    border-radius: 10px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
+}
+
+
+/* Contact Section */
+#contacto {
+    padding: 50px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mapa {
+    flex: 1;
+}
+
+.contact-info {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-details {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-details h3 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0055b3;
+}
+
+/* Alimentación Section */
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #e6f2ff;
+    border-radius: 10px;
+}
+
+.right-align {
+    text-align: left;
+}
+.right-align h2 {
+    color: #004080; /* Color del título */
+    margin-bottom: 20px;
+}
+.right-align li {
+    margin-bottom: 10px; /* Espacio entre cada ítem de la lista */
+    font-size: 16px;
+}
+
+/* Estilos para la tabla de alimentos */
+.food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.food-table th, .food-table td {
+    border: 1px solid #004080;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.food-table th {
+    background-color: #cce6ff;
+    color: #004080;
+}
+
+.food-table td ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* Barra de navegación */
+.navbar .logo h1 {
+    margin: 0;
+    color: white;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+.alimentacion {
+    background-image: url('imagenes/nutricion.jpg'); /* Cambia 'images/tu-imagen.jpg' a la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Opcional: Hace que la imagen no se mueva al hacer scroll */
+    padding: 2px 0; /* Añade espacio alrededor del contenido */
+    color: #000; /* Ajusta el color del texto si es necesario */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    border-top: 0.5px solid #ccc;
+}
+
+
+.menu-diario h3 {
+    color: #004080; /* Color del título */
+    margin-bottom: 20px;
+}
+
+.menu-diario ul {
+    list-style-type: disc; /* Viñetas para la lista */
+    padding-left: 20px;
+}
+
+.menu-diario li {
+    margin-bottom: 10px; /* Espacio entre cada ítem de la lista */
+    font-size: 16px;
+}
+
+/* Estilos para la lista de alimentos a evitar o reducir con dos columnas */
+.lista-alimentos-evitar .food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    border: 1px solid #ccc; /* Borde claro */
+}
+
+.lista-alimentos-evitar .food-table th {
+    background-color: #f0f0f0; /* Fondo gris claro para el encabezado */
+    padding: 10px;
+    text-align: left;
+    color: #333; /* Texto oscuro para el encabezado */
+    border: 1px solid #ddd;
+}
+
+.lista-alimentos-evitar .food-table td {
+    padding: 15px;
+    vertical-align: top;
+    border: 1px solid #ddd; /* Borde entre columnas */
+}
+
+.lista-alimentos-evitar .food-table td ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+/* RAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.medicamento-info {
+    display: flex; /* Usamos flex para alinear la imagen y el texto en una línea */
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.medicamento-info img {
+    max-width: 450px; /* Tamaño de la imagen del medicamento */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-content {
+    max-width: 800px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+h3 {
+    color: #16a085;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.tablet-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tablet-images img {
+    max-width: 150px;
+    margin: 10px;
+    background-color: #f4f4f4; /* Ajusta el color de fondo al color del sitio */
+    padding: 5px;
+    border-radius: 10px; /* Añadir bordes redondeados para mejorar la integración */
+}
+

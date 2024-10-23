@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alimentos para Personas con VIH</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4c3; /* Fondo verde claro */
+        }
+
+        .table-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid #388e3c; /* Borde verde oscuro */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 500px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #388e3c; /* Borde de tabla verde oscuro */
+        }
+
+        th {
+            background-color: #81c784; /* Verde más suave para el título */
+            color: #1b5e20; /* Verde más oscuro para el texto */
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        ul li {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #424242; /* Color de texto */
+        }
+
+        /* Para dispositivos móviles */
+        @media (max-width: 768px) {
+            .table-container {
+                padding: 10px;
+                flex-direction: column;
+            }
+
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            ul li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <div class="column">
+            <table>
+                <tr>
+                    <th>Proteínas (para reparar y fortalecer el sistema inmunológico)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Pollo sin piel</li>
+                            <li>Pavo</li>
+                            <li>Pescados grasos (salmón, sardinas, atún)</li>
+                            <li>Huevos</li>
+                            <li>Tofu y tempeh</li>
+                            <li>Legumbres (lentejas, frijoles, garbanzos)</li>
+                            <li>Nueces y semillas (almendras, nueces, semillas de chía, semillas de calabaza)</li>
+                            <li>Yogur natural bajo en grasa (idealmente enriquecido con probióticos)</li>
+                            <li>Quesos bajos en grasa</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Grasas saludables (para mejorar la absorción de nutrientes y la salud cardiovascular)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Aguacate</li>
+                            <li>Aceite de oliva</li>
+                            <li>Aceite de coco (en moderación)</li>
+                            <li>Frutos secos (almendras, nueces, pistachos)</li>
+                            <li>Semillas (chía, lino, sésamo)</li>
+                            <li>Pescado graso (salmón, sardinas, caballa)</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Frutas (para antioxidantes y vitaminas)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Manzanas</li>
+                            <li>Peras</li>
+                            <li>Plátanos</li>
+                            <li>Bayas (arándanos, fresas, frambuesas)</li>
+                            <li>Cítricos (naranjas, pomelos, mandarinas)</li>
+                            <li>Mango</li>
+                            <li>Piña</li>
+                            <li>Papaya</li>
+                            <li>Kiwi</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Suplementos naturales y alimentos fermentados (para apoyar el sistema digestivo)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Kimchi</li>
+                            <li>Sauerkraut (repollo fermentado)</li>
+                            <li>Miso</li>
+                            <li>Kombucha (sin azúcar añadida)</li>
+                            <li>Kefir</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="column">
+            <table>
+                <tr>
+                    <th>Carbohidratos complejos (fuente de energía constante)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Arroz integral</li>
+                            <li>Quínoa</li>
+                            <li>Avena</li>
+                            <li>Pan integral</li>
+                            <li>Pasta de trigo integral</li>
+                            <li>Batatas (camotes)</li>
+                            <li>Papas al horno o al vapor (sin piel si es necesario por problemas digestivos)</li>
+                            <li>Cebada</li>
+                            <li>Frutas como manzanas, peras, plátanos, bayas y cítricos</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Vegetales (ricos en vitaminas, minerales y antioxidantes)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Brócoli</li>
+                            <li>Espinacas</li>
+                            <li>Kale</li>
+                            <li>Zanahorias</li>
+                            <li>Pimientos (especialmente los rojos, que son altos en vitamina C)</li>
+                            <li>Tomates</li>
+                            <li>Pepino</li>
+                            <li>Calabacín</li>
+                            <li>Champiñones</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Productos lácteos bajos en grasa (para la salud ósea y mantener el sistema inmunológico)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Leche descremada o baja en grasa</li>
+                            <li>Yogur griego sin azúcar (idealmente con probióticos)</li>
+                            <li>Queso bajo en grasa</li>
+                            <li>Leche de almendras o soja fortificada con calcio y vitamina D</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Líquidos (para mantener una buena hidratación)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Agua</li>
+                            <li>Infusiones (té de hierbas, té verde)</li>
+                            <li>Caldo bajo en sodio</li>
+                            <li>Agua de coco</li>
+                            <li>Jugos naturales sin azúcar (en moderación)</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Alimentos a evitar o consumir con moderación</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Alimentos procesados: Evitar alimentos ultraprocesados como embutidos, comida rápida, alimentos congelados con conservantes.</li>
+                            <li>Azúcares refinados: Evitar refrescos azucarados, pasteles, golosinas y otros productos con azúcares añadidos.</li>
+                            <li>Grasas trans: Evitar margarina, productos de bollería industrial y frituras.</li>
+                            <li>Alcohol: En moderación o evitar, ya que puede interferir con los medicamentos antirretrovirales y afectar el sistema inmune.</li>
+                            <li>Alimentos crudos: Como sushi o carnes crudas, que pueden aumentar el riesgo de infecciones.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Ejemplo de un menú diario</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><strong>Desayuno:</strong> Avena con plátano, almendras y una cucharada de semillas de chía.</li>
+                            <li><strong>Almuerzo:</strong> Ensalada de espinacas, pimientos rojos, aguacate y pollo a la plancha con aceite de oliva.</li>
+                            <li><strong>Cena:</strong> Salmón al horno con quinoa y brócoli al vapor.</li>
+                            <li><strong>Snacks:</strong> Yogur natural con bayas, zanahorias baby con hummus, o nueces mixtas.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
